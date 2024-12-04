@@ -1,0 +1,309 @@
+/* ADD YOUR CUSTOM CSS TO THIS FILE BELOW */
+h1, h2, h3, h4, h5 {
+  font-family: Roboto, sans-serif;
+}
+
+p, li, a {
+  font-family: Optima, monospace;
+}
+
+.bg-primary {
+	background-color: #50442a !important;
+	color: #f6f4ef !important;
+}
+
+#goodreads {
+	width: 50%;
+	height: auto;
+}
+
+#analysis {
+  color: #50442a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+#carouselExample {
+	width: 100%;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+
+/* Center the carousel items vertically and horizontally */
+.carousel-inner {
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100%; /* Match the carousel height */
+}
+
+.carousel-item img {
+  margin: auto; /* Ensure images are centered within their item */
+}
+
+/* Center the navigation arrows */
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust centering */
+  z-index: 10; /* Ensure they appear above the content */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 2rem; /* Adjust icon size as needed */
+  height: 2rem;
+}
+
+#research {
+  background-image: url('images/research.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#user-research {
+  text-align: center;
+  background-color: #50442a;
+  color: #f6f4ef;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#design-question {
+  text-align: center;
+  background-color: #f6f4ef;
+  color: #50442a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.blockquote {
+  border-color: #50442a;
+  border-style: solid;
+  border-width: 10px;
+  padding: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#questions {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: #50442a;
+}
+
+#process {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: #50442a;
+}
+
+#interview-process {
+  background-color: #f6f4ef;
+  padding: 30px;
+}
+
+#findings {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #f6f4ef;
+  color: #50442a;
+}
+
+#section3 {
+  text-align: center;
+}
+
+.results {
+  padding: 20px;
+}
+
+#interview {
+  position: relative;
+  width: 100%;
+}
+
+#painpoints {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: #50442a;
+}
+
+.accordion-item {
+  background-color: #50442a;
+  color: #f6f4ef;
+}
+
+.accordion-button {
+  background-color: #f6f4ef;
+  color: #50442a;
+  border-style: solid;
+  border-width: 5px;
+}
+
+#designrequirements {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #50442a;
+  color: #f6f4ef;
+}
+
+.card-body {
+  background-color: #f6f4ef;
+  color: #50442a;
+  padding: 20px;
+}
+
+.card {
+  border-color: #50442a;
+  border-style: solid;
+  border-width: 10px;
+}
+
+#personas {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #f6f4ef;
+  color: #50442a;
+}
+
+.personaheaders {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+#persona1 {
+  position: relative;
+  width: 100%;
+}
+
+#ideation{
+  background-image: url('images/ideation.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#ideationheader {
+  text-align: center;
+  background-color: #50442a;
+  color: #f6f4ef;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#infographic {
+  position: relative;
+  width: 40%;
+}
+
+#designthinking {
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #f6f4ef;
+  color: #50442a;
+}
+
+#wireframes {
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: #50442a;
+}
+
+.carousel-dark {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+
+#redesign {
+  background-image: url('images/redesign.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#redesignheader {
+  text-align: center;
+  background-color: #f6f4ef;
+  color: #50442a;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#before {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #50442a;
+  color: #f6f4ef;
+}
+
+.current {
+  position: relative;
+  width: 20%;
+  padding-bottom: 30px;
+}
+
+#mockups {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #f6f4ef;
+  text-align: center;
+  color: #50442a;
+}
+
+#chatbot {
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: #50442a;
+}
+
+#abtesting {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #50442a;
+  color: #f6f4ef;
+}
+
+.ab {
+  position: relative;
+  width: 40%;
+}
+
+#ai {
+  background-image: url('images/ai.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#aiheader {
+  text-align: center;
+  background-color: #50442a;
+  color: #f6f4ef;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#aianalysis {
+  background-color: #f6f4ef;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: #50442a;
+}
+
+.conclusion {
+  border-color: #50442a;
+  border-style: solid;
+  border-width: 10px;
+  padding: 20px;
+}
+
+li {
+  padding-top: 5px;
+}

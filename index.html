@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Goodreads Case Study">
+        <meta name="author" content="Rachel Hayes">
+        <title>Goodreads Case Study</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.icon">
+  <!-- LOAD BOOTSTRAP CSS - DO NOT DELETE -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="styles.css" rel="stylesheet">
+  <!-- END LOADING BOOTSTRAP CSS -->
+
+      
+    <!-- Custom styles -->
+    <link href="custom.css" rel="stylesheet">
+
+
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+            <div class="container px-4">
+                <a class="navbar-brand" href="#page-top">Goodreads Case Study</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <!-- The hrefs here must match the ID attribute of the corresponding divs/containers -->
+                        <li class="nav-item"><a class="nav-link" href="#analysis">Analysis</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#research">User Research</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#ideation">Ideation</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#redesign">Redesign</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#ai">AI</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="bg-primary">
+            <div class="container px-4 text-center">
+                <h1 class="fw-bolder">App Flow Redesign Case Study</h1>
+                <img id="goodreads" src="images/goodreads.png" alt="goodreads">
+                <h2>Rachel Hayes</h2>
+            </div>
+        </header>
+        <!-- About section - the ID attribute value here must match the corresponding href in navigation -->
+        <!-- For example - this section with id="about" must match the href="#about" in the navigation -->
+        <section id="analysis">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-7">
+                        <h2>Goodreads</h2>
+                        <p>Goodreads is a mobile application that allows book lovers to discover and read more books and keep track of books they want to read. While the app serves as a convient way to find and log books, there are many areas of improvement for user interaction and usability. </p>
+                        <h3>App Analysis</h3>
+                        <p>The app has four main pages:</p>
+                        <ul>
+                            <li>The 'Home' page is where you can browse book recommendations and see friends' reviews.</li>
+                            <li>The 'My Books' page is where you can update book progress and see the books you want to read.</li>
+                            <li>The 'Discover' page is where you can see book recommendations.</li>
+                            <li>The 'Search' page is where you can find a specific book by searching for the name, title, author, or genre.</li>
+                        </ul>
+                        <p>The app is known to have an outdated interface and gives generic recommendations that are not personalized enough to the user.</p>
+                        <p>The original design of Goodreads also shows elements of bias that can impact user experience and engagement.</p>
+                        <ul>
+                            <li><b>Problem:</b> Goodreads heavily promotes mainstream and highly popular books on its home page and search results, making it harder for readers seeking diverse recommendations.
+                                <ul>
+                                    <li><b>Improvement:</b> Introduce algorithms that prioritize diverse and personalized recommendations. This can be achieved by using user preferences, past reading habits, and interactive preference quizzes to spotlight lesser-known authors and unique genres.</li>
+                                </ul>
+                            </li>
+                            <li><b>Problem:</b>The interface is cluttered with ads and excessive sections, implicitly biases users toward sponsored content or specific categories of books. This can make users feel overwhelmed and disoriented.
+                                <ul>
+                                    <li><b>Improvement:</b> Streamline the home page by minimizing ads and creating a clean, visually appealing layout. Personalized dashboards that adapt to individual user preferences can reduce the influence of commercial bias.</li>
+                                </ul>
+                            </li>
+                            <li><b>Problem:</b>Reviews and ratings from highly active users disproportionately influence the perception of books. This creates a skewed view of quality and enjoyment, potentially marginalizing books that receive fewer reviews but still resonate with specific audiences.
+                                <ul>
+                                <li><b>Improvement:</b>Display a variety of reviews by prioritizing diversity in user demographics and reading habits. Include filtering options for different types of reviewers (e.g., genre specialists, verified accounts).</li>
+                            </ul>
+                        </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-5">
+                        <div id="carouselExample" class="carousel carousel-dark slide">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="images/home.png" class="d-block w-50" alt="Goodreads home page">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="images/my-books.png" class="d-block w-50" alt="Goodreads My Books page">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="images/discover.png" class="d-block w-50" alt="Goodreads discover page">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="images/search.png" class="d-block w-50" alt="Goodreads discover page">
+                            </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- User Research Hero -->
+        <section class="bg-light" id="research">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-2">
+                        <h2 id="user-research">User Research</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Design Question section -->
+        <section id="design-question">
+            <div class="container px-4">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-6" id="design">
+                    <h3>Design Question</h3>
+                    <blockquote class="blockquote">
+                      <p class="lead">How can we improve the experience of readers using the mobile app Goodreads?</p>
+                    </blockquote>
+                    </div>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <p>I centered my redesign of Goodreads around this question to help me focus on the types of interview questions I wanted to ask my participants.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Research questions section -->
+        <section id="questions">
+            <div class="container px-4">
+                <div class="row g-4">
+                    <div class="col-lg-12">
+                        <h3>Research Questions</h3>
+                        <p>Below are the questions I asked my participants during their interviews. I wanted to ask them about their experience of using Goodreads to find out what they think of its features and usability. I used ChatGPT to help me come up with some questions to ask.</p>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="card-group">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">1.</h5>
+                                    <p class="card-text">Can you walk me through the steps you take to find and add a book to your reading list? What parts of this feels smooth or frustrating?</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">2.</h5>
+                                    <p class="card-text">How do you navigate between different sections of the app? What improvements could be made to make navigation easier or more intuitive?</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">3.</h5>
+                                    <p class="card-text">When writing or reading reviews, what does the current design help you accomplish, and where do you feel restricted?</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">4.</h5>
+                                    <p class="card-text">How do you feel about the process of discovering new books on Goodreads? Are there any changes that would make finding new books more engaging?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="card-group">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">5.</h5>
+                                    <p class="card-text">What’s your experience when trying to update your reading status or share progress with your friends? Is there anything that could be simplified?</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">6.</h5>
+                                    <p class="card-text">How would you describe the process of organizing your bookshelves? What changes to this design flow would make it easier to manage?</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">7.</h5>
+                                    <p class="card-text">If you could change or add any features to Goodreads to enhance your overall reading experience, what would that be and why?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Interview process section -->
+        <section id="process">
+            <div class="container px-4">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-10" id="interview-process">
+                        <h3>Interview Process</h3>
+                        <p>I interviewed 4 people in person who I already knew use Goodreads. I created a google forms of the same interview questions for other people to fill out so that I can have as much data from different users and their points of views as possible. I posted it in my Instagram and Snapchat stories so my followers could fill it out. I also decided to have ChatGPT as one of my interviewees. I conducted the interview in the same way one would a face-to-face interview; by allowing it to answer my questions one at a time and waiting for me to ask it the other questions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Findings section -->
+        <section id="findings">
+            <div class="container px-4">
+                <div class="row g-4">
+                    <div class="col-lg-12">
+                        <h3 id="section3">Findings</h3>
+                    </div>
+                    <div class="col-lg-6">
+                        <p class="results">I ended up gathering information from 10 people (ChatGPT is not included). A majority of the users brought up similar problems with the app. For instance, most of them said that they want an option for the “Discover” feature to promote lesser-known books instead of mainstream recommendations that it currently provides. Also, some seemed to find the navigation between sections confusing and time-consuming. They said they want a more efficient way to access key features. In addition, users thought the organizing of bookshelves to be overwhelming and frustrating and thought it would be better to have sorting options or more customization options. A few users want an easier way to share their reading progress with friends and have more interactivity. Lastly, most of the users brought up how the star rating system is limited and they would like more flexibility such as having the option to give a book a half star rating.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <p class="results">ChatGPT was asked the same questions, and answered almost the same. It also mentioned the problem of the recommended books mostly being popular and repetitive, and finding lesser-known books requires a lot of scrolling. ChatGPT brought up the issue of the navigation bar having too many clicks to access lists, and desires a more customizable or streamline navigation with quicker tabs to improve efficiency. Something that wasn’t mentioned before was that having an interactive social reading experience, like virtual book clubs and buddy reading. It also suggests adding a reading tracker that analyzes habits and offers personalized recommendations based on reading patterns and moods.</p>
+                    </div>
+                    <div class="col-lg-6 results">
+                        <p>Below are the percentages of the participants’ responses summarized from the previous slide.</p>
+                        <ul>
+                            <li>75% of users expressed frustrations with cluttered homepage and navigation issues</li>
+                            <li>50% of users want improvements on book discovery and rating systems</li>
+                            <li>33% of users mentioned that the process of logging reading progress and marking books as finished should be simplified</li>
+                            <li>25% of users desire better social interaction features for engaging with friends or authors</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-12">
+                        <img id="interview" src="images/interview.png" alt="Interview questions">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Pain Points -->
+        <section id="painpoints">
+            <div class="container px-4">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-7">
+                        <h3>Pain Points</h3>
+                        <p>After analyzing the interview responses, I used ChatGPT to help me identify common pain points so that I know what users find difficult or unappealing.</p>
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                #1. Search and Discoverability
+                              </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">Users often struggle with finding less popular books. The search function is effective for popular books but can be frustrating for lesser-known titles or niche genres. The "Discover" feature doesn't fully meet users' needs, as it tends to promote mainstream or repetitive recommendations.</div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                #2. Home Page and Navigation Complexity
+                              </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">Users find the navigation between sections and home page layout confusing. They want quicker, more intuitive access to key features like their bookshelves, profile, and recommendations.</div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                #3. Customizability of Shelves and Bookshelves Management
+                              </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">Managing and organizing bookshelves is not user-friendly. Users would appreciate bulk actions, easier sorting options, and more visual or interactive features for shelves.</div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                $4. Reading Progress and Status Updates
+                              </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">Updating reading progress could be smoother and more engaging. Users want better visibility of their updates and an easier way to share reading progress with friends.</div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                                #5. Rating system and Reviews
+                              </button>
+                            </h2>
+                            <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">The current star rating system and review formatting options feel limiting. Users want more flexibility, such as half-star ratings and better ways to customize their reviews.div>
+                            </div>
+                          </div>
+                         </div> <!-- end accordion -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Design Requirements Section -->
+        <section id="designrequirements">
+            <div class="container px-4">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-12">
+                        <h3>Design Requirements</h3>
+                        <p>I developed 5 design requirements based on these pain points to ensure that my redesign meets these requirements.</p>
+                        <div class="card-group">
+                          <div class="card">
+                            <div class="card-body">
+                              <h5 class="card-title">1.</h5>
+                              <p class="card-text">The app should allow users to filter search results by multiple genres, popularity, and book format because users find it difficult to discover less popular or niche books using the current search system.</p>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="card-body">
+                              <h5 class="card-title">2.</h5>
+                              <p class="card-text">The app should introduce half-star ratings and allow for more detailed review formatting options because users feel restricted in how they can rate and review books, leading to less accurate feedback.</p>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="card-body">
+                              <h5 class="card-title">3.</h5>
+                              <p class="card-text">The app should provide drag-and-drop functionality for moving books between shelves and editing options because managing bookshelves is currently a cumbersome process with too many steps and little flexibility.</p>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="card-body">
+                              <h5 class="card-title">4.</h5>
+                              <p class="card-text">The app should include a quick-access feature to update reading progress and allow real-time visibility of progress for friends because updating reading status and sharing it with friends feels disconnected and requires too many steps.</p>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="card-body">
+                              <h5 class="card-title">5.</h5>
+                              <p class="card-text">The app should offer a customizable home page that allows users to prioritize sections like their profile, bookshelves, or recommendations because users find the current homepage cluttered and difficult to navigate, leading to frustration.</p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Personas -->
+        <section id="personas">
+            <div class="container px-4">
+                <div class="row g-4">
+                    <div class="col-lg-12">
+                        <h3>Personas</h3>
+                        <p>I created two personas, with Persona 1 being the primary persona and Persona 2 being the secondary persona. I used my interview findings to develop their profiles to make sure that the redesign meets a variety of needs regardless of the user.</p>
+                        <h4 class="personaheaders">Persona 1 - Emily Carter</h4>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <img id=persona1 src="images/persona1.png" alt="Woman holding books">
+                    </div>
+                    <div class="col-lg-4">
+                        <p><b>Slogan:</b> "Finding the hidden gems in the world of books!" <br><b><u>Key Characteristics:</u><br>Age:</b> 20<br><b>Gender:</b> Female<br> <b>Occupation:</b> College student (Psychology major, Business minor) <br> <b>Reading Habits:</b> Avid reader; frequently reviews books on Goodreads.<br> <b>Lifestyle:</b> Busy schedule with classes, studying, and part-time work; often reads during commutes or breaks. <br> <b>Tech Savvy:</b> Comfortable using mobile apps but prefers clean, user-friendly interfaces</p>
+                        <p class="lead">Represents 70% of users</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <p><b><u>Key Goals:</u></b><br> <b>Discover New Books:</b> Wants to find unique, lesser-known books that align with her interests, avoiding mainstream and repetitive recommendations. <br> <b>Manage Reading Progress:</b> Seeks an efficient way to log her reading progress without interrupting her busy schedule. <br> <b>Visual Appeal:</b> Prefers a visually appealing home screen that is easy to navigate and free of clutter and ads. <br> <b>Optimize Time:</b> Looking for tools within the app that help her quickly find and add books, making the most of her limited reading time.</p>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <h4 class="personaheaders">Persona 2 - Laura Wilson</h4>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <img src="images/persona2.png" alt="Headshot of woman">
+                    </div>
+                    <div class="col-lg-4">
+                        <p><b>Slogan:</b> “Simplifying my reading journey, one review at a time.”<br><u><b>Key Characteristics:</b></u><br><b>Age:</b> 40 <br><b>Gender:</b> Female <br><b>Occupation:</b> Goverment contracting professional<br><b>Reading Habits:</b> Occasional reader and reviewer on Goodreads, enjoys a mix of fiction and non-fiction.<br><b>Tech Savviness:</b> Moderate, uses the Goodreads app mainly to log books and write reviews but seeks more simplicity and intuitive navigation.<br><b>App Use:</b> Sporadic; uses the app after finishing a book.</p>
+                        <p class="lead">Represents 30% of users</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <p><u><b>Key Goals</b></u><br><b>Easier Book Progress Tracking:</b> Wants a simpler, more intuitive method for logging book progress on Goodreads.<br><b>Half-Star Rating System:</b> Seeks more control over book ratings, specifically with half-star options.<br><b>Better Bookshelf Customization:</b> Desires the ability to easily move and organize books between shelves, with potential drag-and-drop functionality.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Ideation header section -->
+        <section id="ideation">
+            <div class="container px-4">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-2">
+                        <h2 id="ideationheader">Ideation</h2> 
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- design thinking section -->
+        <section id="designthinking">
+            <div class="container px-4">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <h3>Design Thinking Process</h3>
+                        <p>Below is an infographic describing my ideation process.</p>
+                        <img id="infographic" src="images/design-thinking.png" alt="Design thinking infographic">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- wireframe section -->
+        <section id="wireframes">
+            <div class="container px-4">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <h3>Wireframes</h3>
+                        <p>I decided to redesign the user flows of navigating the home page, searching for books, and reviewing books. I created wireframes of my redesigns so that I could visualize my ideas. These helped me create interactive mockups more efficiently by already having an idea of what to include.</p>
+                        <h4><b>Color Key:</b></h4>
+                    </div>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-2">
+                        <img src="images/current.png" alt="Blue circle">
+                        <p>Represents the page you are currently on</p>
+                    </div>
+                    <div class="col-lg-2">
+                        <img src="images/next.png" alt="Red circle">
+                        <p>Represents the button you click to bring you to the next slide</p>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <h4>Cusomizing The Home Page Layout</h4>
+                        <!-- carousel -->
+                        <div id="carouselExampleIndicators" class="carousel slide carousel-dark">
+                          <div class="carousel-inner" id="page1">
+                            <div class="carousel-item active">
+                              <img src="images/wireframes/home-page/1.png" class="d-block w-100" alt="Wireframe home page 1">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="images/wireframes/home-page/2.png" class="d-block w-100" alt="Wireframe home page 2">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="images/wireframes/home-page/3.png" class="d-block w-100" alt="Wireframe home page 3">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="images/wireframes/home-page/4.png" class="d-block w-100" alt="Wireframe home page 4">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="images/wireframes/home-page/5.png" class="d-block w-100" alt="Wireframe home page 5">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="images/wireframes/home-page/6.png" class="d-block w-100" alt="Wireframe home page 6">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="images/wireframes/home-page/7.png" class="d-block w-100" alt="Wireframe home page 7">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="images/wireframes/home-page/8.png" class="d-block w-100" alt="Wireframe home page 8">
+                            </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <h4>Searching For Books</h4>
+                        <!-- carousel -->
+                        <div id="carouselExampleIndicators1" class="carousel slide carousel-dark">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="images/wireframes/search/1.png" class="d-block w-100" alt="Wireframe search page 1">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="images/wireframes/search/2.png" class="d-block w-100" alt="Wireframe search page 2">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="images/wireframes/search/3.png" class="d-block w-100" alt="Wireframe search page 3">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="images/wireframes/search/4.png" class="d-block w-100" alt="Wireframe search page 4">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="images/wireframes/search/5.png" class="d-block w-100" alt="Wireframe search page 5">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="images/wireframes/search/6.png" class="d-block w-100" alt="Wireframe search page 6">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="images/wireframes/search/7.png" class="d-block w-100" alt="Wireframe search page 7">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="images/wireframes/search/8.png" class="d-block w-100" alt="Wireframe search page 8">
+                            </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <h4>Rating/Reviewing Books</h4>
+                        <!-- carousel -->
+                        <div id="carouselExampleIndicators2" class="carousel slide carousel-dark">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="images/wireframes/rating/1.png" class="d-block w-100" alt="Wireframe rating page 1">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="images/wireframes/rating/2.png" class="d-block w-100" alt="Wireframe rating page 2">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="images/wireframes/rating/3.png" class="d-block w-100" alt="Wireframe rating page 3">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="images/wireframes/rating/4.png" class="d-block w-100" alt="Wireframe rating page 4">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="images/wireframes/rating/5.png" class="d-block w-100" alt="Wireframe rating page 5">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="images/wireframes/rating/6.png" class="d-block w-100" alt="Wireframe rating page 6">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="images/wireframes/rating/7.png" class="d-block w-100" alt="Wireframe rating page 7">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="images/wireframes/rating/8.png" class="d-block w-100" alt="Wireframe rating page 8">
+                            </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- redesign header section  -->
+        <section id="redesign">
+            <div class="container px-4">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-2">
+                        <h2 id="redesignheader">Redesign</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- before section -->
+        <section id="before">
+            <div class="container px-4">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-12">
+                        <h2>Current User Flows</h2>
+                    </div>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-12">
+                        <h3>Navigating The Home Page</h3>
+                        <img class="current" src="images/before/navigating-home/1.png" alt="Home page 1">
+                        <img class="current" src="images/before/navigating-home/2.png" alt="Home page 2">
+                        <img class="current" src="images/before/navigating-home/3.png" alt="Home page 3">
+                    </div>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-12">
+                        <h3>Browsing/Searching For New Books</h3>
+                        <img class="current" src="images/before/browsing/1.png" alt="Search 1">
+                        <img class="current" src="images/before/browsing/2.png" alt="Search 2">
+                    </div>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-12">
+                        <h3>Rating/Reviewing Books</h3>
+                        <img class="current" src="images/before/reviewing/1.png" alt="Review page 1">
+                        <img class="current" src="images/before/reviewing/2.png" alt="Review page 2">
+                        <img class="current" src="images/before/reviewing/3.png" alt="Review page 3">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- mockups section -->
+        <section id="mockups">
+            <div class="container px-4">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-10">
+                        <h3>Mockups</h3>
+                        <p>I used the information gathered through user research and ideation to create an interactive mockup in Figma of the redesigned user flow of rating books. To accommadte impairments, I made sure that the colors and fonts I used stood out and contrast. In a different user flow, I made it so that the user can change the color theme to further meet their needs. To meet accessibility guidelines, I made the buttons large enough for the user to click it with their finger and made the font large enough to see easily.</p>
+                        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="1000" height="650" src="https://embed.figma.com/proto/pqP2A2IaqhdkM2Vsujx0Ar/Goodreads-prototype-(Copy)?node-id=117-1467&node-type=frame&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=117%3A1467&embed-host=share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- chatbot -->
+        <section id="chatbot">
+            <div class="container px-4">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-7">
+                        <h3>Chatbot</h3>
+                        <p>I created a chatbot that helps users discover new book recommendations that are unique and niche to them. They would answer the questions the bot asks, and it would give them book recommendations.</p>
+                    </div>
+                    <div class="col-lg-12">
+                        <iframe width="1000" height="800" src="https://page.botpenguin.com/67181ab54f54eaebf7270a9a/67180e8edff68c0b0c8a548a"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- A/B testing -->
+        <section id="abtesting">
+            <div class="container px-4">
+                <div class="row g-4">
+                    <div class="col-lg-12">
+                        <h3>A/B Testing</h3>
+                        <p>I decided to see if structured prompts would affect review completion and user engagement because I thought it would be interesting to see if users find these structured prompts helpful for expressing opinions or if they prefer the freedom of open-ended responses. I added a new element that allows users to answer specific prompts as compared to an open-ended review box to see if that would affect user experience and engagement.</p>
+                        <h4>Test Elements</h4>
+                    </div>
+                    <div class="col-lg-4">
+                        <h5>Screen A</h5>
+                        <img class="ab" src="images/ab-testing/a/a1.png" alt="Page 1 of screen A">
+                        <img class="ab" src="images/ab-testing/a/a2.png" alt="Page 2 of screen A">
+                    </div>
+                    <div class="col-lg-4">
+                        <h5>Screen B</h5>
+                        <img class="ab" src="images/ab-testing/b/b1.png" alt="Page 1 of screen B">
+                        <img class="ab" src="images/ab-testing/b/b2.png" alt="Page 2 of screen B">
+                    </div>
+                    <div class="col-lg-12">
+                        <h4>Findings</h4>
+                        <p>I had 5 users interact with one flow (10 users total) and asked them follow-up questions about their experience. <br> Overall, screen B performed better than screen A. A majority of the users preferred having prompts to give them some starting points on writing a review.</p>
+                        <ul>
+                            <li>Screen A Results
+                                <ul>
+                                    <li>40% of users were satisfied with the experience of the open-ended aspect of this flow.</li>
+                                    <li>60% of users mentioned how it would be better if they were told how to write a review or given some starting points.</li>
+                                </ul>
+                            </li>
+                            <li>Screen B Results
+                                <ul>
+                                    <li>80% of users were satisfied with the suggested prompts of this flow because they felt it would help give them ideas on how to write a review. </li>
+                                    <li>One thing that surprised me was how a few users mentioned how having this as an option would be perfect, but they still would want the option to write their own review as well.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <p>I used these findings to update my prototype to be the final design that was presented previously. I originally had Screen A in my mockup, but based on the findings from this test, I combined the two so that users have the option to write their own free-response or have guided prompts. I think this final design ensures that users have even more choices when it comes to reviewing books.</p> 
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI header section  -->
+        <section id="ai">
+            <div class="container px-4">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-1">
+                        <h2 id="aiheader">AI</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI analysis -->
+        <section id="aianalysis">
+            <div class="container px-4">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-8 conclusion">
+                        <h3>AI Analysis</h3>
+                        <p>I used ChatGPT to help me perform user research for this project. I think it mostly had a positive impact regarding my experience for this project because it gave me ideas and inspiration if I was stuck on anything. For instance, it gave me good interview and follow-up questions, which helped me form my questions around that. Also, ChatGPT helped keep me on the right track to ensure that I found all of the pain points in my interview responses. I inserted my responses in ChatGPT and it summarized the results, making me work more efficiently and helped me make sure that I didn't miss any important trends in data. I did notice that it gave me some biased results, but I just ignored them or I tried to write my prompt in a different way to see if it would give me a different answer.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container px-4"><p class="m-0 text-center text-white">Copyright &copy; Rachel Hayes Website 2024</p></div>
+        </footer>
+
+
+
+
+
+        <!-- LOAD BOOTSTRAP JAVASCRIPT - DO NOT DELETE -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+        <!-- Core theme JS - DO NOT DELETE -->
+        <script src="js/scripts.js"></script>
+        <!-- END LOADING JAVASCRIPT -->
+    </body>
+</html>
